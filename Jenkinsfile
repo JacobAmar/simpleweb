@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'jenkins-helm' }
     stages {
         stage('Installing the helm chart :)') {
             steps{
