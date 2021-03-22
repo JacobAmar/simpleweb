@@ -24,6 +24,9 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
+serviceAccount:
+  create: false
+
 autoscaling:
   enabled: true
   minReplicas: 1
