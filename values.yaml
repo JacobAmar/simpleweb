@@ -6,11 +6,6 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
-serviceAccount:
-  # Specifies whether a service account should be created
-  create: false
-
-
 service:
   type: ClusterIP
   port: 80
@@ -28,6 +23,9 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+serviceAccount:
+  create: false
 
 autoscaling:
   enabled: true
